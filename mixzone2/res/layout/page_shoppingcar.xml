@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5" >
+
+    <RelativeLayout
+        android:id="@+id/relative_shop_car_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_sharp" >
+
+        <ImageView
+            android:id="@+id/image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/title" />
+
+        <TextView
+            android:id="@+id/text_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26dp" />
+
+        <TextView
+            android:id="@+id/textView_shopping_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/shoppingCar" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_shopping_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_buy_it"
+        android:layout_below="@+id/relative_shop_car_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/text_nogood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/noProduct" />
+
+    <RelativeLayout
+        android:id="@+id/layout_buy_it"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" 
+        android:background="@drawable/bottom_sharp" >
+
+        <CheckBox
+            android:id="@+id/all_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp" />
+
+        <TextView
+            android:id="@+id/text_car_good_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/all_check"
+            android:text="@string/allCheck" />
+
+        <TextView
+            android:id="@+id/text_buylist_all_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/text_car_good_name"
+            android:text="@string/allAddDefault"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_shopping_car_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_buylist_all_price"
+            android:layout_below="@+id/text_car_good_name"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/realallAdd"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/add_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35dp"
+            android:text="结算"
+            android:textColor="#ffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

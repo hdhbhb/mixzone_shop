@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_buy_it"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_sharp" >
+
+                <ImageView
+                    android:id="@+id/image_back"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <ImageView
+                    android:id="@+id/image_car_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/image_back"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/line_cut3" />
+
+                <TextView
+                    android:id="@+id/text_good_toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/buylist" />
+            </RelativeLayout>
+
+            <Spinner
+                android:id="@+id/spinner_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.example.mixzone2.memberCenter.myListView
+                android:id="@+id/listview_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </com.example.mixzone2.memberCenter.myListView>
+
+            <Spinner
+                android:id="@+id/spinner_money_way"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_buy_it"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bottom_sharp" >
+
+        <TextView
+            android:id="@+id/text_buylist_all_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/allAddDefault"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/add_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:text="下单"
+            android:textColor="#ffff"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

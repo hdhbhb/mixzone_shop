@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#F5F5F5"
+    >
+
+    <include layout="@layout/goods_toolbar" >
+    </include>
+
+    <ScrollView
+        android:id="@+id/scrollView_Good"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="400dp" ><!-- 420 -->
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:id="@+id/dot1_0"
+                        android:layout_width="5dip"
+                        android:layout_height="5dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/dot_focused" />
+
+                    <View
+                        android:id="@+id/dot1_1"
+                        android:layout_width="5dip"
+                        android:layout_height="5dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/dot_normal" />
+
+
+                </LinearLayout>
+            </FrameLayout>
+            
+            <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_cut"
+                />
+
+            <TextView
+                android:id="@+id/text_good_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="高端整体橱柜不锈钢高身拉篮_高柜拉篮_联动储物篮_大怪物_碗碟篮_连门拉篮_大型储物篮_BS1104"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_good_detail_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="品牌：米雄 商品编号：MIX_BS1104 商品重量：28.000千克 商品尺寸：365x485x(1240-1450)mm 系统分类： 厨房收纳系统"
+                android:textColor="#c0c0c0"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_good_detail_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.26"
+                android:background="#ffffff"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=" "
+                android:textColor="#ff0000"
+                android:textSize="15sp" />
+            
+            <ImageView 
+                android:paddingTop="7dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_cut"
+                />
+            <RelativeLayout 
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:id="@+id/text_car_good_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5dp"
+                    android:text="@string/checked"
+                    android:textColor="#c0c0c0" />
+
+                <TextView
+                    android:id="@+id/text_good_detail_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="26dp"
+                    android:layout_toRightOf="@+id/text_car_good_count" />
+
+            </RelativeLayout>
+            <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_cut"
+                />
+            
+            <!-- 
+            <RelativeLayout 
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="同品质市场参考价：￥1307.00为您节省：￥339.00可用M币：700"
+                    android:textColor="#808a87"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+             -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                 >
+
+                <TextView
+                    android:id="@+id/text_good_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:textSize="12sp" />
+                <!--  
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="更多评论 >"
+                    android:textSize="12sp" />
+                 -->
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_nocomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <com.example.mixzone2.memberCenter.myListView
+                android:id="@+id/list_comment_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_weight="1" >
+            </com.example.mixzone2.memberCenter.myListView>
+
+            
+
+
+            
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bottom_sharp2" >
+
+        <RelativeLayout
+            android:id="@+id/addInCar"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/text_car_good_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="false"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/addInCar"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

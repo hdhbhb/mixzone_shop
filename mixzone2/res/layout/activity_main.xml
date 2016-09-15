@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mixzone2.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+        
+        <fragment
+            android:id="@+id/fragment_home_page"
+        	android:name="com.example.mixzone2.homePage.fragmentHomePage"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="10"/>
+        
+        <fragment
+            android:id="@+id/fragment_classification_page" 
+            android:name="com.example.mixzone2.classificationPage.fragmentClassificationPage"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="10"/>
+        <!-- 
+        <fragment
+            android:id="@+id/fragment_jiazhuangbaike_page"
+            android:name="com.example.mixzone2.jiaZhuangBaiKe.fragmentJiaZhuangBaiKePage"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="10"/>
+         -->
+        <fragment
+            android:id="@+id/fragment_shopping_car_page"
+            android:name="com.example.mixzone2.shoppingCar.fragmentShoppingCarPage"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="10"/>
+        
+        <fragment
+            android:id="@+id/fragment_member_center_page"
+            android:name="com.example.mixzone2.memberCenter.fragmentMemberCenter"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="10"/>
+        
+      <RadioGroup
+            android:id="@+id/footbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/button_home_page"
+            style="@style/navigation_bottom_radio"
+            android:drawableTop="@drawable/buttom_homepage_icon"
+            android:text="@string/homepage"
+            android:checked="true"/>
+
+
+        <RadioButton
+            android:id="@+id/button_classification_page"
+            style="@style/navigation_bottom_radio"
+            android:drawableTop="@drawable/buttom_classification_icon"
+            android:text="@string/classification_page"
+            />
+        <!--  
+        <RadioButton
+            android:id="@+id/button_activities_page"
+            style="@style/navigation_bottom_radio"
+            android:drawableTop="@drawable/buttom_activities_icon"
+            android:text="@string/jiazhuangbaike" />
+        -->
+        <RadioButton
+            android:id="@+id/button_shopping_car_page"
+            style="@style/navigation_bottom_radio"
+            android:drawableTop="@drawable/buttom_shopping_car_icon" 
+            android:text="@string/shopping_car_page"
+            />
+
+
+        <RadioButton
+            android:id="@+id/button_menber_center_page"
+            style="@style/navigation_bottom_radio"
+            android:drawableTop="@drawable/buttom_member_center_icon"
+            android:text="@string/member_center_page"
+            />
+        
+    </RadioGroup>
+        
+    </LinearLayout>
+    
+</RelativeLayout>

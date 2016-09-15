@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:paddingTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/text_hotsell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:text="@string/hot_sell"
+                android:textColor="#FF9912"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_hotsell2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text_hotsell"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:text="@string/hot_sell2"
+                android:textColor="#808A87"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_kitchen_system_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_cut" />
+        
+        <com.example.mixzone2.homePage.myGridView
+            android:id="@+id/gView_hotsale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0dp"
+            android:verticalSpacing="0dp"
+           	android:numColumns="3"
+            android:listSelector="@null"
+            android:stretchMode="columnWidth"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginBottom="-2dp"
+            
+            ></com.example.mixzone2.homePage.myGridView>
+        
+        
+        <!-- 
+        <ImageView
+            android:id="@+id/image_banner_xiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/banner_xiao"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+             />
+             
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffff"
+             >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image_dajuhui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/a1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image_choujiangqu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/a2" />
+
+                <ImageView
+                    android:id="@+id/image_qiangxiangou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/a3" />
+
+                <ImageView
+                    android:id="@+id/image_jiangjiapaihang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/a4" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+         -->
+        
+        <com.example.mixzone2.homePage.myGridView 
+            android:id="@+id/gView_kitchen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0dp"
+            android:verticalSpacing="0dp"
+           	android:numColumns="3"
+            android:listSelector="@null"
+            android:stretchMode="columnWidth"
+            android:paddingTop="5dp"
+            >
+        </com.example.mixzone2.homePage.myGridView >
+        
+        <com.example.mixzone2.homePage.myGridView  
+            android:id="@+id/gView_wardrobe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0dp"
+            android:verticalSpacing="0dp"
+           	android:numColumns="3"
+            android:listSelector="@null"
+            android:stretchMode="columnWidth"
+            >
+        </com.example.mixzone2.homePage.myGridView >
+
+        <com.example.mixzone2.homePage.myGridView  
+            android:id="@+id/gView_led_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0dp"
+            android:verticalSpacing="0dp"
+           	android:numColumns="3"
+            android:listSelector="@null"
+            android:stretchMode="columnWidth"
+            >
+        </com.example.mixzone2.homePage.myGridView >
+        
+
+        <!-- 
+        <ImageView
+        android:id="@+id/image_tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_cut2"
+        android:paddingBottom="10dp"
+         />
+        
+        <com.example.mixzone2.homePage.myGridView
+            android:id="@+id/gView_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0dp"
+            android:verticalSpacing="0dp"
+           	android:numColumns="3"
+            android:listSelector="@null"
+            android:stretchMode="columnWidth"
+            android:paddingTop="5dp"
+            >
+        </com.example.mixzone2.homePage.myGridView>
+         -->
+    </LinearLayout>
+
+</RelativeLayout>

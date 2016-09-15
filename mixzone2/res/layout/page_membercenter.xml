@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="@null"
+         >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/titlebar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffff"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:padding="10dp" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#0000" >
+
+                    <com.example.mixzone2.tools.CircleImageView
+                        android:id="@+id/image_menber_head"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/menber_head_default"
+                        app:border_color="#ffff"
+                        app:border_width="2dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_member_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="20dp"
+                    android:text="@string/noLogin" />
+
+                <ImageView
+                    android:id="@+id/image_car_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/line_cut4" />
+            </LinearLayout>
+            <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffff"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                 >
+
+                <RelativeLayout
+                    android:id="@+id/qpoint_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/text_qpoint_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="false"
+                        android:gravity="top"
+                        android:text="@string/qpoint_default"
+                        android:textColor="#c0c0c0"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/text_qpoint_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/qpoint"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/image_shopping_car_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/line_cut3" />
+
+                <RelativeLayout
+                    android:id="@+id/mypoint_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/text_mypoint_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/mypoint_default"
+                        android:textColor="#c0c0c0"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/text_mypoint_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/mypoint"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/image_shopping_car_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/line_cut3" />
+
+                <RelativeLayout
+                    android:id="@+id/change_phone_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="14dp"
+                        android:src="@drawable/phone" />
+
+                    <TextView
+                        android:id="@+id/text_change_phonenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/change_phone"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/line_cut3" />
+
+                <RelativeLayout
+                    android:id="@+id/change_mail_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="16dp"
+                        android:src="@drawable/mail" />
+
+                    <TextView
+                        android:id="@+id/text_change_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/change_mail"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            -->
+
+            <TextView
+                android:id="@+id/text_member1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/member_manage" />
+            
+            <com.example.mixzone2.memberCenter.myListView
+                android:id="@+id/member_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffff"
+                android:scrollbars="@null" >
+            </com.example.mixzone2.memberCenter.myListView>
+
+            <TextView
+                android:id="@+id/text_member2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/member_center" />
+            <com.example.mixzone2.memberCenter.myListView
+                android:id="@+id/member_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffff"
+                android:scrollbars="@null" >
+            </com.example.mixzone2.memberCenter.myListView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
